@@ -83,6 +83,7 @@ gcloud functions deploy safLongRunJobFunc --region=us-central1 --stage-bucket=[Y
 python -m venv env
 source env/bin/activate
 pip install apache-beam[gcp]
+pip install dateparser
 pip install Cython
 ```
 or
@@ -91,6 +92,7 @@ or
 python -m venv env
 env\Scripts\activate
 pip install apache-beam[gcp]
+pip install dateparser
 pip install Cython
 ```
 * The Dataflow job will create the **BigQuery Table** you listed in the parameters.
